@@ -14,6 +14,8 @@ server.listen(process.env.PORT||3000,(err)=>{
 	console.log(err)
 })
 
+// app.listen(process.env.PORT||3000)
+
 app.use(cors());
 
 app.use(bodyParser.json());
@@ -27,7 +29,6 @@ io.on('connection',(socket)=>{
 	socket.emit("connect",{})
 
 	socket.on("name",(data)=>{
-		socket.join(data.name)
 		names[socket.id]=(data.name)
 		console.log(socket.id, "chose name")
 		
