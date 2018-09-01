@@ -1,0 +1,20 @@
+{
+  "name": "chat-app.api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "node": "^10.9.0",
+    "nodemon": "^1.18.3",
+    "socket.io": "^2.1.1",
+    "uniqid": "^5.0.3"
+  }
+}

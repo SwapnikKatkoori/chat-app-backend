@@ -1,1 +1,1 @@
-# chat-app-backend
+# chat-with-friends-backend
