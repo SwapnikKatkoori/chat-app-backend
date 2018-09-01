@@ -53,5 +53,7 @@ io.on('connection',(socket)=>{
 		io.in(roomId[socket.id]).emit("messageGet",{message:newMessage})
 	
 	})
+
+	socket.on("disconnect",()=>{console.log("client disconnected")})
 	
 })
