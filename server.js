@@ -20,6 +20,10 @@ app.use(bodyParser.json());
 
 app.get("/",(req,res)=>console.log("working"))
 
+io.configure(function () { 
+    io.set("transports", ["xhr-polling"]); 
+    io.set("polling duration", 10); 
+});
 
 io.on('connection',(socket)=>{
 	console.log("socket ",socket.id, "is connected")
